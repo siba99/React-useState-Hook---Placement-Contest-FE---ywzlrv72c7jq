@@ -25,7 +25,7 @@ const changeInput=(e)=>{
   return (
     
     <div>
-    <input id='input' type="text" value={inputValue}  onChange={changeInput}/>
+    <input id='input' value={inputValue}  onChange={changeInput}/>
      {/* {
       print?
       <h1>{data}</h1>:
