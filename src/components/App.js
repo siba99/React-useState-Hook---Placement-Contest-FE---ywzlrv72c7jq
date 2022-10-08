@@ -33,8 +33,7 @@ const changeInput=(e)=>{
     }  */}
     <p id="intro">Concated String</p>
     <p id="text">{text}</p>
-    <button id='button' onClick={buttonClick}>click me</button>
-    {/* <button onClick={()=>setPrint(true)}>Click me</button> */}
+    <button id='button' onClick={buttonClick}>Click me</button>
     </div>
   );
 }
