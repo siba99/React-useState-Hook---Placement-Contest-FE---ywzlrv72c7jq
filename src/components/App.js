@@ -6,8 +6,8 @@ import React, { useState } from 'react';
 export default function App() {
  //code h
 
- const[text,setText]=useState(" ");
- const [inputValue,setInputValue]=useState(" ");
+ const[text,setText]=useState("");
+ const [inputValue,setInputValue]=useState("");
 
 const buttonClick=()=>{
      setText((oldItems)=>{
