@@ -6,17 +6,17 @@ import React, { useState } from 'react';
 export default function App() {
  //code h
 
- const[data,setData]=useState(" ");
- const [print,setPrint]=useState(" ");
+ const[text,setText]=useState(" ");
+ const [inputValue,setInputValue]=useState(" ");
 
 const buttonClick=()=>{
-     setData((oldItems)=>{
-      return[...oldItems,print];
+     setText((oldItems)=>{
+      return[...oldItems,inputValue];
      });
-     setPrint("");
+     setInputValue("");
 }
 const changeInput=(e)=>{
-  setPrint(e.target.value);
+  setInputValue(e.target.value);
 }
 
 //  function getValue(e){
@@ -25,17 +25,16 @@ const changeInput=(e)=>{
   return (
     
     <div>
-    <input id='input' type="text" value={print}  onChange={changeInput}/>
+    <input id='input' type="text" value={inputValue}  onChange={changeInput}/>
      {/* {
       print?
       <h1>{data}</h1>:
       null
     }  */}
     <p id="intro">Concated String</p>
-    <p id="text">{data}</p>
+    <p id="text">{text}</p>
     <button id='button' onClick={buttonClick}>click me</button>
     {/* <button onClick={()=>setPrint(true)}>Click me</button> */}
     </div>
-    
   );
 }
